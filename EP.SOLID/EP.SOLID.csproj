@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66591FF9-3126-443D-BDDD-089C17E3D063}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EP.SOLID</RootNamespace>
+    <AssemblyName>EP.SOLID</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="1 - SRP\SRP.Solucao\ClienteService.cs" />
+    <Compile Include="1 - SRP\SRP.Solucao\Cliente.cs" />
+    <Compile Include="1 - SRP\SRP.Violacao\Cliente.cs" />
+    <Compile Include="1 - SRP\SRP.Solucao\ClienteRepository.cs" />
+    <Compile Include="1 - SRP\SRP.Solucao\CPFServices.cs" />
+    <Compile Include="1 - SRP\SRP.Solucao\EmailServices.cs" />
+    <Compile Include="2 - OCP\OCP.Violacao\DebitoConta.cs" />
+    <Compile Include="2 - OCP\OCP.Violacao\TipoConta.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao\DebitoConta.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao\DebitoContaInvestimento.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao\DebitoContaPoupanca.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao\DebitoContaCorrente.cs" />
+    <Compile Include="3 - LSP\LSP.Violacao\Program.cs" />
+    <Compile Include="3 - LSP\LSP.Violacao\Quadrado.cs" />
+    <Compile Include="3 - LSP\LSP.Violacao\Retangulo.cs" />
+    <Compile Include="4 - ISP\ISP.Violacao\CadastroCliente.cs" />
+    <Compile Include="4 - ISP\ISP.Violacao\CadastroProduto.cs" />
+    <Compile Include="4 - ISP\ISP.Violacao\ICadastro.cs" />
+    <Compile Include="4 - ISP\ISP.Solucao\CadastroCliente.cs" />
+    <Compile Include="4 - ISP\ISP.Solucao\CadastroProduto.cs" />
+    <Compile Include="4 - ISP\ISP.Solucao\ICadastroCliente.cs" />
+    <Compile Include="4 - ISP\ISP.Solucao\ICadastroProduto.cs" />
+    <Compile Include="5 - DIP\DIP.Violacao\Cliente.cs" />
+    <Compile Include="5 - DIP\DIP.Violacao\ClienteRepository.cs" />
+    <Compile Include="5 - DIP\DIP.Violacao\ClienteService.cs" />
+    <Compile Include="5 - DIP\DIP.Violacao\CPFServices.cs" />
+    <Compile Include="5 - DIP\DIP.Violacao\EmailServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\Cliente.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\ClienteRepository.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\ClienteServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\CPFServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\EmailServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\Interfaces\IClienteRepository.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\Interfaces\IClienteServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\Interfaces\ICPFServices.cs" />
+    <Compile Include="5 - DIP\DIP.Solucao\Interfaces\IEmailServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
