@@ -1,4 +1,4 @@
-namespace EP.SOLID.ISP.Solucao
+namespace EP.SOLID.ISP.Solucao.Interfaces
 {
     public interface ICadastroProduto
     {

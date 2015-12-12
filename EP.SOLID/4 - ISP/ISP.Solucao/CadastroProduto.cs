@@ -1,3 +1,5 @@
+using EP.SOLID.ISP.Solucao.Interfaces;
+
 namespace EP.SOLID.ISP.Solucao
 {
     public class CadastroProduto : ICadastroProduto

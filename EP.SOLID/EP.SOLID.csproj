@@ -40,13 +40,21 @@
     <Compile Include="1 - SRP\SRP.Solucao\ClienteRepository.cs" />
     <Compile Include="1 - SRP\SRP.Solucao\CPFServices.cs" />
     <Compile Include="1 - SRP\SRP.Solucao\EmailServices.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao Extension Methods\CaixaEletronico.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao Extension Methods\DebitoConta.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao Extension Methods\DebitoContaInvestimento.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao Extension Methods\DebitoContaPoupanca.cs" />
+    <Compile Include="2 - OCP\OCP.Solucao Extension Methods\DebitoContaCorrente.cs" />
     <Compile Include="2 - OCP\OCP.Violacao\DebitoConta.cs" />
     <Compile Include="2 - OCP\OCP.Violacao\TipoConta.cs" />
     <Compile Include="2 - OCP\OCP.Solucao\DebitoConta.cs" />
     <Compile Include="2 - OCP\OCP.Solucao\DebitoContaInvestimento.cs" />
     <Compile Include="2 - OCP\OCP.Solucao\DebitoContaPoupanca.cs" />
     <Compile Include="2 - OCP\OCP.Solucao\DebitoContaCorrente.cs" />
-    <Compile Include="3 - LSP\LSP.Violacao\Program.cs" />
+    <Compile Include="3 - LSP\LSP.Solucao\Paralelogramo.cs" />
+    <Compile Include="3 - LSP\LSP.Solucao\Quadrado.cs" />
+    <Compile Include="3 - LSP\LSP.Solucao\Retangulo.cs" />
+    <Compile Include="3 - LSP\LSP.Violacao\CalculoArea.cs" />
     <Compile Include="3 - LSP\LSP.Violacao\Quadrado.cs" />
     <Compile Include="3 - LSP\LSP.Violacao\Retangulo.cs" />
     <Compile Include="4 - ISP\ISP.Violacao\CadastroCliente.cs" />
@@ -54,8 +62,8 @@
     <Compile Include="4 - ISP\ISP.Violacao\ICadastro.cs" />
     <Compile Include="4 - ISP\ISP.Solucao\CadastroCliente.cs" />
     <Compile Include="4 - ISP\ISP.Solucao\CadastroProduto.cs" />
-    <Compile Include="4 - ISP\ISP.Solucao\ICadastroCliente.cs" />
-    <Compile Include="4 - ISP\ISP.Solucao\ICadastroProduto.cs" />
+    <Compile Include="4 - ISP\ISP.Solucao\Interfaces\ICadastroCliente.cs" />
+    <Compile Include="4 - ISP\ISP.Solucao\Interfaces\ICadastroProduto.cs" />
     <Compile Include="5 - DIP\DIP.Violacao\Cliente.cs" />
     <Compile Include="5 - DIP\DIP.Violacao\ClienteRepository.cs" />
     <Compile Include="5 - DIP\DIP.Violacao\ClienteService.cs" />
@@ -70,6 +78,7 @@
     <Compile Include="5 - DIP\DIP.Solucao\Interfaces\IClienteServices.cs" />
     <Compile Include="5 - DIP\DIP.Solucao\Interfaces\ICPFServices.cs" />
     <Compile Include="5 - DIP\DIP.Solucao\Interfaces\IEmailServices.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

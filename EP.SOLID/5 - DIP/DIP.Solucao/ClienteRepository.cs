@@ -8,6 +8,7 @@ namespace EP.SOLID.DIP.Solucao
     {
         public void AdicionarCliente(Cliente cliente)
         {
+
             using (var cn = new SqlConnection())
             {
                 var cmd = new SqlCommand();
@@ -25,6 +26,7 @@ namespace EP.SOLID.DIP.Solucao
                 cn.Open();
                 cmd.ExecuteNonQuery();
             }
+
         }
     }
 }

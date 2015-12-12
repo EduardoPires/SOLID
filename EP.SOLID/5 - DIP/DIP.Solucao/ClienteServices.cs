@@ -8,11 +8,11 @@ namespace EP.SOLID.DIP.Solucao
         private readonly IEmailServices _emailServices;
 
         public ClienteServices(
-            IClienteRepository clienteRepository, 
-            IEmailServices emailServices)
+            IEmailServices emailServices, 
+            IClienteRepository clienteRepository)
         {
-            _clienteRepository = clienteRepository;
             _emailServices = emailServices;
+            _clienteRepository = clienteRepository;
         }
 
         public string AdicionarCliente(Cliente cliente)

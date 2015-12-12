@@ -5,7 +5,7 @@
         public override string Debitar(decimal valor, string conta)
         {
             // Debita Conta Corrente
-            return NumeroTransacao;
+            return FormatarTransacao();
         }
     }
 }

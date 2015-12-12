@@ -5,6 +5,7 @@ namespace EP.SOLID.DIP.Violacao
 {
     public class ClienteRepository
     {
+
         public void AdicionarCliente(Cliente cliente)
         {
             using (var cn = new SqlConnection())

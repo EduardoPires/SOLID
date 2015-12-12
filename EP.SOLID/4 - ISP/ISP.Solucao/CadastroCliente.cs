@@ -1,4 +1,6 @@
-﻿namespace EP.SOLID.ISP.Solucao
+﻿using EP.SOLID.ISP.Solucao.Interfaces;
+
+namespace EP.SOLID.ISP.Solucao
 {
     public class CadastroCliente : ICadastroCliente
     {

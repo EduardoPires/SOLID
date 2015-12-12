@@ -2,17 +2,20 @@
 
 namespace EP.SOLID.LSP.Violacao
 {
-    public class Program
+    public class CalculoArea
     {
         private static void ObterAreaRetangulo(Retangulo ret)
         {
+            Console.Clear();
             Console.WriteLine("Calculo da área do Retangulo");
-            Console.WriteLine(ret.Altura.ToString() + " * " + ret.Largura.ToString());
+            Console.WriteLine();
+            Console.WriteLine(ret.Altura + " * " + ret.Largura);
+            Console.WriteLine();
             Console.WriteLine(ret.Area);
             Console.ReadKey();
         }
 
-        private static void Main()
+        public static void Calcular()
         {
             var quad = new Quadrado()
             {

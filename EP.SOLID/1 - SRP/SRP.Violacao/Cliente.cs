@@ -50,7 +50,7 @@ namespace EP.SOLID.SRP.Violacao
             };
 
             mail.Subject = "Bem Vindo.";
-            mail.Body = "Parabéns! Você está casastrado.";
+            mail.Body = "Parabéns! Você está cadastrado.";
             client.Send(mail);
 
             return "Cliente cadastrado com sucesso!";

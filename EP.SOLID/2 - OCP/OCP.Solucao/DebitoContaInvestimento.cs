@@ -6,7 +6,7 @@
         {
             // Debita Conta Investimento
             // Isentar Taxas
-            return NumeroTransacao;
+            return FormatarTransacao();
         }
     }
 }
