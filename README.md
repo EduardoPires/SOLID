@@ -15,7 +15,7 @@ Este projeto tem como intenção demonstrar a violação de cada um dos princíp
 ## Observações		 
  
 Confira o artigo e o vídeo explicativo neste artigo:
-<a href="http://eduardopires.net.br/2015/01/solid-teoria-e-pratica/">SOLID – Teoria e Prática</a>
+<a href="http://eduardopires.net.br/2015/01/solid-teoria-e-pratica/" target="_blank">SOLID – Teoria e Prática</a>
 
 ## Feedback
 
